@@ -1,7 +1,3 @@
-/**
- * author: Daniel Husar
- */
-
 (function (window, document, $, undefined) {
   'use strict';
 
