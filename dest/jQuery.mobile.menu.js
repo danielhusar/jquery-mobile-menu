@@ -17,14 +17,13 @@
       var settings = $.extend(defaults, options);
 
       var scrollPosition = 0;
+      var $document = $('html');
+      var $body = $(document.body);
       return this.on('click.menu', function (e) {
 
         if (settings.preventDefault) {
           e.preventDefault();
         }
-
-        var $document = $('html');
-        var $body = $(document.body);
 
         if (scrollPosition) {
           $document.toggleClass(settings.openClass); //hide menu first
