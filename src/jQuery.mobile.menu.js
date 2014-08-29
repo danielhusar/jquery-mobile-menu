@@ -1,7 +1,6 @@
 (function (window, document, $, undefined) {
   'use strict';
 
-
   $.fn.extend({
     mobileMenu: function (options) {
 
