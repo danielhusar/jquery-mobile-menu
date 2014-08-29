@@ -25,6 +25,20 @@ Default: 'menu-open'
 
 Class that is added to html when the menu is open
 
+#### preventDefault
+
+Type: `Boolean`  
+Default: true
+
+If the default action should be prevented. (like anchor redirect)
+
+#### callback
+
+Type: `Function`  
+Default: noop
+
+Function to be called each time user click the toggle button
+
 
 ## Demo
 
