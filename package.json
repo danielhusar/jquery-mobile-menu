@@ -8,7 +8,7 @@
     "menu"
   ],
   "scripts": {
-    "test": "mocha-phantomjs test/index.html"
+    "test": "gulp lint && mocha-phantomjs test/index.html"
   },
   "author": {
     "name": "Daniel Husár",

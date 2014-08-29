@@ -17,6 +17,7 @@
 	"smarttabs": true,
   "globals"   : {
     /* MOCHA */
+    "$"   : false,
     "describe"   : false,
     "it"         : false,
     "before"     : false,

@@ -10,13 +10,18 @@
     mobileMenu: function (options) {
 
       var defaults = {
-        openClass : 'menu-open'
+        openClass : 'menu-open',
+        preventDefault: true,
+        callback: function () {}
       };
-      var settings = $.extend( defaults, options);
+      var settings = $.extend(defaults, options);
 
       var scrollPosition = 0;
       return this.on('click.menu', function (e) {
-        e.preventDefault();
+
+        if (settings.preventDefault) {
+          e.preventDefault();
+        }
 
         var $document = $('html');
         var $body = $(document.body);
@@ -30,6 +35,10 @@
           $body.scrollTop(scrollPosition);
           scrollPosition = tempPosition;
           $document.toggleClass(settings.openClass); //show menu when all caculations are done
+        }
+
+        if (typeof settings.callback === 'function') {
+          settings.callback.call(this, e);
         }
 
       });
