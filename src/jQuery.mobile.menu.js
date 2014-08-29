@@ -14,6 +14,7 @@
       var scrollPosition = 0;
       var $document = $('html');
       var $body = $(document.body);
+      
       return this.on('click.menu', function (e) {
 
         if (settings.preventDefault) {
