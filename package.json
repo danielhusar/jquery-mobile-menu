@@ -15,7 +15,6 @@
     "email": "dano.husar@gmail.com"
   },
   "files": [
-    "cli.js",
     "index.js"
   ],
   "repository": {
